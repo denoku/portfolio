@@ -10,7 +10,6 @@ import {
 } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
-import Image from 'next/image'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
