@@ -56,7 +56,7 @@ export default function HomePage() {
             digital experiences.
             <br />
             <br />
-            Outside of work, I'm passionate about Japanese curry, lived in
+            Outside of work, I&apos;m passionate about Japanese curry, lived in
             Tokyo, and spend way too much time with my pets.
           </p>
 
