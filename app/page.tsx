@@ -117,32 +117,33 @@ export default function HomePage() {
               <p className="text-base md:text-lg text-center md:text-left">
                 I use my passion for clean, scalable design to build digital
                 experiences that support real business needs. With years of
-                experience as a full-stack developer, I've created tools that
-                streamline internal processes, increase revenue, and help users
-                find exactly what they’re looking for.
+                experience as a full-stack developer, I&apos;ve created tools
+                that streamline internal processes, increase revenue, and help
+                users find exactly what they’re looking for.
               </p>
 
               <p className="text-base md:text-lg text-center md:text-left">
-                At my current role, I’ve led the development of a sales margin
-                calculator that makes it easy to apply discounts, rebates, and
-                cost overrides, while giving the team full visibility into
-                profit margins. I also built a custom chamber configurator for
-                our main site — an interactive tool that helps customers choose
-                exactly the right temperature chamber for their needs.
+                At my current role, I&apos;ve led the development of a sales
+                margin calculator that makes it easy to apply discounts,
+                rebates, and cost overrides, while giving the team full
+                visibility into profit margins. I also built a custom chamber
+                configurator for our main site — an interactive tool that helps
+                customers choose exactly the right temperature chamber for their
+                needs.
               </p>
 
               <p className="text-base md:text-lg text-center md:text-left">
-                Internally, I’ve delivered secure apps using Next.js, Auth.js,
-                and Prisma, and worked extensively with Tailwind, ShadCN, and
-                Drizzle. I enjoy working at the intersection of thoughtful
-                design and code that performs.
+                Internally, I&apos;ve delivered secure apps using Next.js,
+                Auth.js, and Prisma, and worked extensively with Tailwind,
+                ShadCN, and Drizzle. I enjoy working at the intersection of
+                thoughtful design and code that performs.
               </p>
 
               <p className="text-base md:text-lg text-center md:text-left">
-                I’m currently expanding my portfolio with independent projects
-                like a cat rescue site to showcase my frontend skills — with the
-                goal of partnering with agencies, businesses, and nonprofits in
-                the near future.
+                I&apos;m currently expanding my portfolio with independent
+                projects like a cat rescue site to showcase my frontend skills —
+                with the goal of partnering with agencies, businesses, and
+                nonprofits in the near future.
               </p>
             </div>
           </div>
