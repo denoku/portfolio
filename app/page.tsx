@@ -8,15 +8,9 @@ import { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 
 // Small animation helpers
-const fadeUp = {
-  hidden: { opacity: 0, y: 16 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
-}
 
 export default function HomePage() {
   const [opacity, setOpacity] = useState(0)
-  const projectsRef = useScrollAnimation()
-  const bioRef = useScrollAnimation()
 
   useEffect(() => {
     const handleScroll = () => {

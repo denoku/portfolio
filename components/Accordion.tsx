@@ -48,6 +48,10 @@ const projects = [
 ]
 
 export default function ProjectAccordion() {
+  // call hooks at the top level of the component
+  const styleA = useParallax(0.02)
+  const styleB = useParallax(-0.015)
+
   return (
     <div
       className="w-full max-w-4xl rounded-3xl shadow-2xl p-8 border border-gray-800"
@@ -73,39 +77,31 @@ export default function ProjectAccordion() {
             <Accordion.ItemContent className="px-6 py-5 bg-gray-900/60 text-sm text-gray-200 border-t border-gray-700">
               {/* Screenshot section with consistent aspect ratio + subtle parallax and stagger */}
               <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-                {(() => {
-                  const styleA = useParallax(0.02)
-                  const styleB = useParallax(-0.015)
-                  return (
-                    <>
-                      <div
-                        className="relative w-full aspect-[16/10] overflow-hidden rounded-xl shadow-md group animate-fade-up"
-                        style={{ ...styleA, animationDelay: '80ms' }}
-                      >
-                        <Image
-                          src="/success-story.png"
-                          alt={`${project.title} screenshot 1`}
-                          fill
-                          className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-                          sizes="(max-width: 768px) 100vw, 50vw"
-                          priority={project.id === '1'}
-                        />
-                      </div>
-                      <div
-                        className="relative w-full aspect-[16/10] overflow-hidden rounded-xl shadow-md group animate-fade-up"
-                        style={{ ...styleB, animationDelay: '160ms' }}
-                      >
-                        <Image
-                          src="/cat-rescue.png"
-                          alt={`${project.title} screenshot 2`}
-                          fill
-                          className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-                          sizes="(max-width: 768px) 100vw, 50vw"
-                        />
-                      </div>
-                    </>
-                  )
-                })()}
+                <div
+                  className="relative w-full aspect-[16/10] overflow-hidden rounded-xl shadow-md group animate-fade-up"
+                  style={{ ...styleA, animationDelay: '80ms' }}
+                >
+                  <Image
+                    src="/success-story.png"
+                    alt={`${project.title} screenshot 1`}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    priority={project.id === '1'}
+                  />
+                </div>
+                <div
+                  className="relative w-full aspect-[16/10] overflow-hidden rounded-xl shadow-md group animate-fade-up"
+                  style={{ ...styleB, animationDelay: '160ms' }}
+                >
+                  <Image
+                    src="/cat-rescue.png"
+                    alt={`${project.title} screenshot 2`}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
               </div>
               <p
                 className="mb-3 leading-relaxed text-gray-200/90 animate-fade-up"
