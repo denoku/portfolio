@@ -1,0 +1,50 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://brianwheeler.dev/#brian",
+    "name": "Brian Wheeler",
+    "jobTitle": "Freelance Full-Stack Developer",
+    "description": "Los Angeles-based freelance full-stack developer specializing in React, Next.js, and modern web applications.",
+    "knowsAbout": [
+      "React",
+      "Next.js",
+      "JavaScript",
+      "TypeScript",
+      "UI/UX Design",
+      "Web Development"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "url": "https://portfolio-livid-pi-77.vercel.app/",
+    "sameAs": [
+      "https://github.com/denoku",
+      "https://www.linkedin.com/in/brianwheeeler/"
+    ],
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Temple University, Tokyo Campus",
+        "sameAs": "https://www.temple.edu/"
+      }
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Full-Stack Developer",
+      "skills": "React, Next.js, TypeScript, UI/UX Design, Backend Development"
+    },
+    "workExample": [
+      {
+        "@type": "CreativeWork",
+        "name": "Cat Rescue App",
+        "url": "https://brianwheeler.dev/projects/cat-rescue",
+        "description": "A web application for a local cat rescue organization, helping connect adopters with rescue cats."
+      }
+    ]
+  }
+}

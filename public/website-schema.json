@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://portfolio-livid-pi-77.vercel.app/#website",
+  "url": "https://portfolio-livid-pi-77.vercel.app/",
+  "name": "Brian Wheeler | Freelance Full-Stack Developer",
+  "description": "Los Angeles-based freelance full-stack developer specializing in React, Next.js, and modern web applications.",
+  "publisher": {
+    "@id": "https://portfolio-livid-pi-77.vercel.app/#brian"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://portfolio-livid-pi-77.vercel.app/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "inLanguage": "en-US"
+}

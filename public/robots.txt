@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block access to administrative areas
+Disallow: /admin/
+Disallow: /dashboard/
+
+# Sitemap location
+Sitemap: https://portfolio-livid-pi-77.vercel.app/sitemap.xml

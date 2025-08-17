@@ -10,6 +10,7 @@ import {
 } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
+import Script from 'next/script'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -50,24 +51,27 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'Brian Wheeler✌️ - FullStack Developer',
+  title: 'Brian Wheeler | Freelance Full-Stack Developer Los Angeles',
   description:
-    'Portfolio of Brian Wheeler, a FullStack Developer specializing in React and Node.js applications.',
+    'Los Angeles-based freelance full-stack developer specializing in React, Next.js, and modern web applications. Available for hire on UI/UX projects.',
   keywords: [
     'Brian Wheeler',
-    'FullStack Developer',
-    'Portfolio',
-    'React',
-    'Node.js',
+    'Full-Stack Developer',
+    'Freelance Developer',
+    'Los Angeles Developer',
+    'React Developer',
+    'Next.js',
     'JavaScript',
+    'UI/UX Designer',
     'Web Development',
+    'Hire Developer',
   ],
   authors: [{ name: 'Brian Wheeler', url: 'https://brianwheeler.dev' }],
   creator: 'Brian Wheeler',
   openGraph: {
-    title: 'Brian Wheeler - FullStack Developer',
+    title: 'Brian Wheeler | Freelance Full-Stack Developer',
     description:
-      'Portfolio of Brian Wheeler, a FullStack Developer specializing in React and Node.js applications.',
+      'Los Angeles-based freelance full-stack developer specializing in React, Next.js, and modern web applications. Available for hire on UI/UX projects.',
     url: 'https://brianwheeler.dev',
     siteName: 'Brian Wheeler Portfolio',
     images: [
@@ -83,11 +87,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Brian Wheeler - FullStack Developer',
+    title: 'Brian Wheeler | Freelance Full-Stack Developer',
     description:
-      'Portfolio of Brian Wheeler, a FullStack Developer specializing in React and Node.js applications.',
+      'Los Angeles-based freelance full-stack developer specializing in React, Next.js, and modern web applications. Available for hire on UI/UX projects.',
     images: ['https://brianwheeler.dev/og-image.png'],
     creator: '@iwh_brianw',
+  },
+  alternates: {
+    canonical: 'https://brianwheeler.dev',
   },
   icons: {
     icon: '/favicon.ico',
@@ -101,6 +108,7 @@ export const metadata: Metadata = {
     ],
   },
   manifest: '/site.webmanifest',
+  metadataBase: new URL('https://brianwheeler.dev'),
 }
 
 export default function RootLayout({
@@ -110,6 +118,56 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="schema-structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Person',
+                  '@id': 'https://brianwheeler.dev/#brian',
+                  name: 'Brian Wheeler',
+                  jobTitle: 'Freelance Full-Stack Developer',
+                  description:
+                    'Los Angeles-based freelance full-stack developer specializing in React, Next.js, and modern web applications.',
+                  knowsAbout: [
+                    'React',
+                    'Next.js',
+                    'JavaScript',
+                    'TypeScript',
+                    'UI/UX Design',
+                    'Web Development',
+                  ],
+                  address: {
+                    '@type': 'PostalAddress',
+                    addressLocality: 'Los Angeles',
+                    addressRegion: 'CA',
+                    addressCountry: 'US',
+                  },
+                  url: 'https://brianwheeler.dev',
+                  sameAs: [
+                    'https://github.com/iwh-brianw',
+                    'https://linkedin.com/in/brianwheelerdev',
+                    'https://twitter.com/iwh_brianw',
+                  ],
+                },
+                {
+                  '@type': 'WebSite',
+                  '@id': 'https://brianwheeler.dev/#website',
+                  url: 'https://brianwheeler.dev',
+                  name: 'Brian Wheeler | Freelance Full-Stack Developer',
+                  description:
+                    'Los Angeles-based freelance full-stack developer specializing in React, Next.js, and modern web applications.',
+                  publisher: { '@id': 'https://brianwheeler.dev/#brian' },
+                },
+              ],
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${roboto.variable} ${oswald.variable} ${poppins.variable} ${montserrat.variable} antialiased`}
       >
