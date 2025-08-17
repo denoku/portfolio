@@ -66,17 +66,19 @@ export const metadata: Metadata = {
     'Web Development',
     'Hire Developer',
   ],
-  authors: [{ name: 'Brian Wheeler', url: 'https://brianwheeler.dev' }],
+  authors: [
+    { name: 'Brian Wheeler', url: 'https://portfolio-livid-pi-77.vercel.app/' },
+  ],
   creator: 'Brian Wheeler',
   openGraph: {
     title: 'Brian Wheeler | Freelance Full-Stack Developer',
     description:
       'Los Angeles-based freelance full-stack developer specializing in React, Next.js, and modern web applications. Available for hire on UI/UX projects.',
-    url: 'https://brianwheeler.dev',
+    url: 'https://portfolio-livid-pi-77.vercel.app/',
     siteName: 'Brian Wheeler Portfolio',
     images: [
       {
-        url: 'https://brianwheeler.dev/og-image.png',
+        url: 'https://portfolio-livid-pi-77.vercel.app/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Brian Wheeler Portfolio',
@@ -90,14 +92,14 @@ export const metadata: Metadata = {
     title: 'Brian Wheeler | Freelance Full-Stack Developer',
     description:
       'Los Angeles-based freelance full-stack developer specializing in React, Next.js, and modern web applications. Available for hire on UI/UX projects.',
-    images: ['https://brianwheeler.dev/og-image.png'],
+    images: ['https://portfolio-livid-pi-77.vercel.app/og-image.png'],
     creator: '@iwh_brianw',
   },
   alternates: {
-    canonical: 'https://brianwheeler.dev',
+    canonical: 'https://portfolio-livid-pi-77.vercel.app/',
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: '/curry.ico',
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
     other: [
@@ -108,7 +110,7 @@ export const metadata: Metadata = {
     ],
   },
   manifest: '/site.webmanifest',
-  metadataBase: new URL('https://brianwheeler.dev'),
+  metadataBase: new URL('https://portfolio-livid-pi-77.vercel.app/'),
 }
 
 export default function RootLayout({
@@ -128,7 +130,7 @@ export default function RootLayout({
               '@graph': [
                 {
                   '@type': 'Person',
-                  '@id': 'https://brianwheeler.dev/#brian',
+                  '@id': 'https://portfolio-livid-pi-77.vercel.app/#brian',
                   name: 'Brian Wheeler',
                   jobTitle: 'Freelance Full-Stack Developer',
                   description:
@@ -147,21 +149,23 @@ export default function RootLayout({
                     addressRegion: 'CA',
                     addressCountry: 'US',
                   },
-                  url: 'https://brianwheeler.dev',
+                  url: 'https://portfolio-livid-pi-77.vercel.app/',
                   sameAs: [
-                    'https://github.com/iwh-brianw',
-                    'https://linkedin.com/in/brianwheelerdev',
-                    'https://twitter.com/iwh_brianw',
+                    'https://github.com/denoku/',
+                    'https://github.com/bwheeeler/',
+                    'https://www.linkedin.com/in/brianwheeeler/',
                   ],
                 },
                 {
                   '@type': 'WebSite',
-                  '@id': 'https://brianwheeler.dev/#website',
-                  url: 'https://brianwheeler.dev',
+                  '@id': 'https://portfolio-livid-pi-77.vercel.app/#website',
+                  url: 'https://portfolio-livid-pi-77.vercel.app/',
                   name: 'Brian Wheeler | Freelance Full-Stack Developer',
                   description:
                     'Los Angeles-based freelance full-stack developer specializing in React, Next.js, and modern web applications.',
-                  publisher: { '@id': 'https://brianwheeler.dev/#brian' },
+                  publisher: {
+                    '@id': 'https://portfolio-livid-pi-77.vercel.app/#brian',
+                  },
                 },
               ],
             }),
